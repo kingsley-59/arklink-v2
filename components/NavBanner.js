@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const NavBanner = ({heading}) => {
@@ -7,7 +8,7 @@ const NavBanner = ({heading}) => {
             <div className="h3 text-white text-capitalize fw-bolder m-auto"> {heading} </div>
             <div className='m-auto'>
                 <small className="text-white text-decoration-none">
-                    <a href="/" className='text-white text-decoration-none'>Home </a> {' > '} {heading}
+                    <Link href="/" className='text-white text-decoration-none'>Home </Link> {' > '} {heading}
                 </small>
             </div>
         </div>

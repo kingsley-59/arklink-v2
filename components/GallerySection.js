@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const GallerySection = () => {
@@ -8,7 +9,7 @@ const GallerySection = () => {
             <div className="font-roboto h2 mb-3 px-3 text-white">
                 Introducing our collection of high quality photos exhibiting  our exotic designs.
             </div>
-            <a href="/gallery" className="btn btn-lg m-auto text-white text-decoration-none">View our gallery</a>
+            <Link href="/gallery" className="btn btn-lg m-auto text-white text-decoration-none">View our gallery</Link>
         </div>
     </div>
   )

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { Nav, Navbar, Container, Button } from 'react-bootstrap'
 
@@ -30,7 +31,7 @@ const Header = () => {
         <Nav.Link href="/contact">Contact</Nav.Link>
       </Nav>
       <Nav>
-        <a href='/contact#get-quote'><Button variant="outline-success">Get Quote</Button></a>
+        <Link href='/contact#get-quote'><Button variant="outline-success">Get Quote</Button></Link>
       </Nav>
     </Navbar.Collapse>
   </Container>

@@ -3,8 +3,9 @@ import ImageKit from 'imagekit-javascript';
 import Header from '../components/Header';
 import PreHeader from '../components/PreHeader';
 import Footer from '../components/Footer';
+import Image from 'next/image'
 
-window.Buffer = window.Buffer || require("buffer").Buffer;
+// window.Buffer = window.Buffer || require("buffer").Buffer;
 
 const API_URL = process.env.REACT_APP_API_URL;
 
@@ -21,7 +22,7 @@ const Gallery = ({imgUrl}) => {
             <div className="row justify-content-center">
                 <div className="col-xs-8 col-md-6 my-4 shadow">
                     <h6 className="text-secondary center"> Uploaded file preview </h6>
-                    <img src={imgUrl} alt="" className="w-100" />
+                    <Image src={imgUrl} alt="" className="w-100" />
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Container, Alert } from 'react-bootstrap'
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/router'
 import Header from '../components/Header';
 import PreHeader from '../components/PreHeader';
 import Footer from '../components/Footer';
@@ -17,8 +17,8 @@ const RegisterComponent = () => {
     const [successMsg, setSuccessMsg] = useState('')
 
     const { getCurrentUser, register } = useAuth()
-    const currentUser = getCurrentUser()
-    const navigate = useNavigate()
+    const currentUser = getCurrentUser
+    const router = useRouter()
 
     useEffect(() => {
         // check if user exists
@@ -39,7 +39,7 @@ const RegisterComponent = () => {
         try {
             const data = await register(name, email, password)
             console.log(data)
-            navigate('/login')
+            router.push('/login')
             return ;
         } catch (error) {
             console.log(error.message)

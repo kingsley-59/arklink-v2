@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Alert } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import Router, { useRouter } from 'next/router'
 import Header from '../components/Header';
 import PreHeader from '../components/PreHeader';
 import Footer from '../components/Footer';
@@ -21,8 +21,8 @@ const LoginComponent = () => {
     const [successMsg, setSuccessMsg] = useState('')
 
     const { getCurrentUser, login } = useAuth()
-    const currentUser = getCurrentUser()
-    const navigate = useNavigate()
+    const currentUser = getCurrentUser
+    const router = useRouter()
 
     useEffect(() => {
         // check if user exists
@@ -39,7 +39,7 @@ const LoginComponent = () => {
         try {
             const data = await login(email, password)
             console.log(data)
-            navigate('/admin')
+            router.push('/admin')
             return ;
         } catch (error) {
             console.log(error.message)

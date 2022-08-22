@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { Container, Button } from 'react-bootstrap'
 
@@ -15,7 +16,7 @@ const Banner = ({content}) => {
           {content?.bannerText ?? defaultBannerText}
         </Container>
         <Container className="banner-btn text-center">
-          <a href='/categories'><Button className="btn">See Categories</Button></a>
+          <Link href='/categories'><Button className="btn">See Categories</Button></Link>
         </Container>
     </Container>
     </>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Container, Button } from 'react-bootstrap'
+import Link from 'next/link'
 
 
 const AboutSection = ({content, showAll}) => {
@@ -27,7 +28,9 @@ const AboutSection = ({content, showAll}) => {
                 <Col lg={5} md={5} xs={10} className="">
                     <div className="about-hero-image about-hero-1">
                     <div className="about-hero-overlay p-3 d-flex justify-content-center align-items-center">
-                        <a href='/contact#get-quote'><Button className="about-hero-btn btn-outline-primary">Get quote</Button></a>
+                        <Link href='/contact#get-quote'>
+                            <Button className="about-hero-btn btn-outline-primary">Get quote</Button>
+                        </Link>
                     </div>
                     </div>
                 </Col>

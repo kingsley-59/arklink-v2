@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
+import Link from 'next/link';
 
 const API_URL = process.env.REACT_APP_API_URL;
 
@@ -25,12 +26,12 @@ const QuickLinks = () => {
     return (
         <div className='text-white mb-4'>
             <span className='text-bold'>Quicklinks:</span><br/>
-            <a href="/home" className='text-white'><span>Home</span></a><br/>
-            <a href="/about" className='text-white'><span>About</span></a><br/>
-            <a href="/products" className='text-white'><span>Products</span></a><br/>
-            <a href="/categories" className='text-white'><span>Categories</span></a><br/>
-            <a href="/gallery" className='text-white'><span>Gallery</span></a><br/>
-            <a href="/contact" className='text-white'><span>Contact</span></a><br/>
+            <Link href="/home" className='text-white'><span>Home</span></Link><br/>
+            <Link href="/about" className='text-white'><span>About</span></Link><br/>
+            <Link href="/products" className='text-white'><span>Products</span></Link><br/>
+            <Link href="/categories" className='text-white'><span>Categories</span></Link><br/>
+            <Link href="/gallery" className='text-white'><span>Gallery</span></Link><br/>
+            <Link href="/contact" className='text-white'><span>Contact</span></Link><br/>
         </div>
     )
 }
@@ -100,7 +101,7 @@ const Footer = ({content}) => {
         </div>
         <hr />
         <div className="text-center" style={{height: 'fit-content'}}>
-            <small className="text-secondary">Copyright &copy; 2022 | All rights reserved | <a href='/login' className='text-white'>Admin Login</a> </small>
+            <small className="text-secondary">Copyright &copy; 2022 | All rights reserved | <Link href='/login' className='text-white'>Admin Login</Link> </small>
         </div>
     </div>
   )
