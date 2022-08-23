@@ -7,7 +7,7 @@ const Header = () => {
     <>
       <Navbar className="bg-green" expand="lg" variant="dark">
         <Container className="p-3 px-4" fluid>
-          <Navbar.Brand href="#">Arklink</Navbar.Brand>
+          <Navbar.Brand className='fw-bold' href="#">Arklink</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -15,15 +15,15 @@ const Header = () => {
               style={{ maxHeight: "150px" }}
               navbarScroll
             >
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/products">Products</Nav.Link>
-              <Nav.Link href="/gallery">Gallery</Nav.Link>
-              <Nav.Link href="/contact">Contact</Nav.Link>
+              <Nav.Link className='text-light' href="/">Home</Nav.Link>
+              <Nav.Link className='text-light' href="/about">About</Nav.Link>
+              <Nav.Link className='text-light' href="/products">Products</Nav.Link>
+              <Nav.Link className='text-light' href="/gallery">Gallery</Nav.Link>
+              <Nav.Link className='text-light' href="/contact">Contact</Nav.Link>
             </Nav>
             <Nav>
               <Link href="/contact#get-quote">
-                <Button className="text-white">Get Quote</Button>
+                <button className="btn">Get Quote</button>
               </Link>
             </Nav>
           </Navbar.Collapse>
