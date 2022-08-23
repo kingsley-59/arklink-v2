@@ -5,7 +5,7 @@ import { Nav, Navbar, Container, Button } from "react-bootstrap";
 const Header = () => {
   return (
     <>
-      <Navbar className="bg-green" bg="dark" expand="lg" variant="dark">
+      <Navbar className="bg-green" expand="lg" variant="dark">
         <Container className="p-3 px-4" fluid>
           <Navbar.Brand href="#">Arklink</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />

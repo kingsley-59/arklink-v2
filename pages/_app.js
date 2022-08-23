@@ -6,9 +6,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    import("bootstrap/dist/js/bootstrap");
-  }, []);
+  // useEffect(() => {
+  //   import("bootstrap/dist/js/bootstrap");
+  // }, []);
   return <Component {...pageProps} />;
 }
 
