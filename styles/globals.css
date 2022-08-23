@@ -61,8 +61,7 @@ a {
 .site-banner {
   min-height: 80vh;
   padding: 40px;
-  /* background-image: url(../assets/images/bathroom-with-tiles-walls.png); */
-  background-image: url('../assets/images/bathroom-with-tiles-walls.png');
+  background-image: url('/bathroom-with-tiles-walls.png');
   background-position: center;
   background-size: cover;
   /* background-clip: border-box; */
@@ -115,13 +114,13 @@ a {
   background-size: cover;
 }
 .about-hero-1{
-  background-image: url(../assets/images/Pexels\ Photo\ by\ Monstera.png);
+  background-image: url('/images/Pexels\ Photo\ by\ Monstera.png');
 }
 .about-hero-2{
-  background-image: url(../assets/images/pexel-bathroom-4.jpg);
+  background-image: url('/images/pexel-bathroom-4.jpg');
 }
 .about-hero-3{
-  background-image: url(../assets/images/pexel-doors-4.jpg);
+  background-image: url('/images/pexel-doors-4.jpg');
 }
 .about-hero-overlay {
   background-color: #82916a00;
