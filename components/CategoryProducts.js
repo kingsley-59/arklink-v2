@@ -6,7 +6,7 @@ const ProductCard = ({name}) => {
     }
     return (
         <div className="col-lg-4 col-md-3 col-sm-2 col-xs-1 px-2 py-3">
-            <div className='bg-primary category-wrapper d-flex align-items-center justify-content-center p-3 mx-3' style={styles}>
+            <div className='bg-green category-wrapper d-flex align-items-center justify-content-center p-3 mx-3' style={styles}>
                 <span className="text-white"> {name} </span>
             </div>
         </div>

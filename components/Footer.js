@@ -84,7 +84,7 @@ const Subscribe = () => {
 const Footer = ({content}) => {
 
   return (
-    <div className='site-section p-5 bg-primary'>
+    <div className='site-section p-5 bg-green'>
         <div className="text-white mb-4">
             <span className="lh-1"><span className='h1 fb-bold font-comfortaa'>Arklink</span><br/><small>Dealers on all kinds of building materials.</small></span>
         </div>

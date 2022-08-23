@@ -10,7 +10,7 @@ const Category = ({name, photo}) => {
     }
 
     return (
-        <div className='bg-primary category-wrapper d-flex align-items-center justify-content-center p-3 mx-3' style={styles}>
+        <div className='bg-green category-wrapper d-flex align-items-center justify-content-center p-3 mx-3' style={styles}>
             <span className="text-white bg-dark bg-opacity-50 rounded p-2"> {name} </span>
         </div>
     );

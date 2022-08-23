@@ -6,7 +6,7 @@ const ProductCard = ({name}) => {
         aspectRatio: "auto 4 / 3"
     }
     return (
-        <div className='bg-primary category-wrapper d-flex align-items-center justify-content-center p-3 mx-3' style={styles}>
+        <div className='bg-green category-wrapper d-flex align-items-center justify-content-center p-3 mx-3' style={styles}>
             <span className="text-white"> {name} </span>
         </div>
     )
