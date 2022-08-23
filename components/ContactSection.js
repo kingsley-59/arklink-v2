@@ -50,7 +50,7 @@ const ContactForm = () => {
             <div className="form-wrapper m-auto" style={{maxWidth: '400px'}}>
                 {successMsg && <Alert variant='success'>{successMsg}</Alert>}
                 {errorMsg && <Alert variant='warning'>{errorMsg}</Alert>}
-                <div className="form-heading h5 fw-bolder text-primary mb-4">Get In Touch</div>
+                <div className="form-heading h5 fw-bolder text-green mb-4">Get In Touch</div>
                 <form onSubmit={handleContactForm}>
                     <div className="form-group mb-3">
                         <input type="text" value={name} onChange={e => setName(e.target.value)} className="form-control" placeholder='tell us your name' required/>

@@ -12,7 +12,11 @@
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .btn {
@@ -31,7 +35,7 @@ a {
 .bg-brown {
   background-color: #CB8655;
 }
-.text-primary {
+.text-green {
   color: #82916A !important;
 }
 .btn-outline-primary {

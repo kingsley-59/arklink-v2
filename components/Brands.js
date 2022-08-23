@@ -71,7 +71,7 @@ const Responsive = () => {
 
   return (
     <div className="mb-3">
-      <h3 className="text-center text-primary mb-3"><strong>Brands in our Collection</strong></h3>
+      <h3 className="text-center text-green mb-3"><strong>Brands in our Collection</strong></h3>
       <div className="m-auto text-center mb-3" style={{maxWidth: 600}}>
         Our huge inventyory is graced with quality products from the most prestigious companies arount the world.
         From chinaware manufacturers to Turkish door companies and Italian toilet equipments.
