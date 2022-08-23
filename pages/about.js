@@ -34,7 +34,7 @@ const AboutMains = () => {
                 <Col lg={5} md={5} xs={10} className="">
                     <div className="about-hero-image about-hero-1">
                     <div className="about-hero-overlay p-3 d-flex justify-content-center align-items-center">
-                        <Button className="about-hero-btn btn-outline-primary">Learn More</Button>
+                        <Button className="about-hero-btn bg-white text-green">Learn More</Button>
                     </div>
                     </div>
                 </Col>
@@ -43,7 +43,7 @@ const AboutMains = () => {
                 <Col lg={5} md={5} xs={10} className="">
                     <div className="about-hero-image about-hero-2">
                     <div className="about-hero-overlay p-3 d-flex justify-content-center align-items-center">
-                        <Button className="about-hero-btn btn-outline-primary">Learn More</Button>
+                        <Button className="about-hero-btn bg-white text-green">Learn More</Button>
                     </div>
                     </div>
                 </Col>

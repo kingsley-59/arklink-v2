@@ -16,7 +16,7 @@ const Banner = ({content}) => {
           {content?.bannerText ?? defaultBannerText}
         </Container>
         <Container className="banner-btn text-center">
-          <Link href='/categories'><Button className="btn">See Categories</Button></Link>
+          <Link className='border-0' href='/categories'><Button className="btn border-0">See Categories</Button></Link>
         </Container>
     </Container>
     </>

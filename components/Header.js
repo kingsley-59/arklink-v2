@@ -23,7 +23,7 @@ const Header = () => {
             </Nav>
             <Nav>
               <Link href="/contact#get-quote">
-                <Button variant="outline-success">Get Quote</Button>
+                <Button className="text-white">Get Quote</Button>
               </Link>
             </Nav>
           </Navbar.Collapse>
