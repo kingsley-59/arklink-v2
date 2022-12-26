@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { Alert } from 'react-bootstrap'
 import Image from 'next/image'
-import photo from '../assets/images/black-man-white-shirt.png'
+import photo from '/public/assets/images/black-man-white-shirt.png'
 
 const API_URL = process.env.REACT_APP_API_URL;
 

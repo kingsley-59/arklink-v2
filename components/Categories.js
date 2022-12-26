@@ -4,7 +4,7 @@ import Slider from "react-slick";
 const Category = ({name, photo}) => {
     let styles = {
         aspectRatio: "auto 4 / 3",
-        backgroundImage: `url('${photo}')`,
+        backgroundImage: `url('/assets${photo}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
     }
@@ -57,19 +57,19 @@ const Categories = () => {
             <div className="slider-wrapper">
                 <Slider {...settings} className=''>
                     <div>
-                        <Category name='Tiles' photo={require('../assets/images/tiles-group-1.jpg')} />
+                        <Category name='Tiles' photo={'/images/tiles-group-1.jpg'} />
                     </div>
                     <div>
-                        <Category name='Toilets' photo={require('../assets/images/pexel-bathroom-2.jpg')} />
+                        <Category name='Toilets' photo={'/images/pexel-bathroom-2.jpg'} />
                     </div>
                     <div>
-                        <Category name='Marbles' photo={require('../assets/images/marble-1.jpg')} />
+                        <Category name='Marbles' photo={'/images/marble-1.jpg'} />
                     </div>
                     <div>
-                        <Category name='Doors' photo={require('../assets/images/pexel-doors-1.jpg')} />
+                        <Category name='Doors' photo={'/images/pexel-doors-1.jpg'} />
                     </div>
                     <div>
-                        <Category name='Bath tubs' photo={import('../assets/images/pexel-bathroom-4.jpg')} />
+                        <Category name='Bath tubs' photo={'/images/pexel-bathroom-4.jpg'} />
                     </div>
                 </Slider>
             </div>

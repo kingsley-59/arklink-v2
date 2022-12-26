@@ -9,7 +9,9 @@ const GallerySection = () => {
             <div className="font-roboto h2 mb-3 px-3 text-white">
                 Introducing our collection of high quality photos exhibiting  our exotic designs.
             </div>
-            <Link href="/gallery" className="btn btn-lg m-auto text-white text-decoration-none">View our gallery</Link>
+            <Link href="/gallery" className="m-auto text-white text-decoration-none" >
+              <span className='btn btn-lg'>View our gallery</span>
+            </Link>
         </div>
     </div>
   )

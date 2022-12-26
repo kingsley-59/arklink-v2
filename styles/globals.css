@@ -21,14 +21,14 @@ body {
 
 .btn {
   background-color: #CB8655 !important;
-  color: #fff;
+  color: #fff !important;
   border-radius: 15;
   border: none;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .btn:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  color: #fff;
+  color: #fff !important;
 }
 .bg-green {
   background-color: #82916A !important;
@@ -66,7 +66,7 @@ body {
 .site-banner {
   min-height: 80vh;
   padding: 40px;
-  background-image: url('/images/bathroom-with-tiles-walls.png');
+  background-image: url('/assets/images/bathroom-with-tiles-walls.png');
   background-position: center;
   background-size: cover;
   /* background-clip: border-box; */
@@ -119,13 +119,13 @@ body {
   background-size: cover;
 }
 .about-hero-1{
-  background-image: url('/images/Pexels\ Photo\ by\ Monstera.png');
+  background-image: url('/assets/images/Pexels\ Photo\ by\ Monstera.png');
 }
 .about-hero-2{
-  background-image: url('/images/pexel-bathroom-4.jpg');
+  background-image: url('/assets/images/pexel-bathroom-4.jpg');
 }
 .about-hero-3{
-  background-image: url('/images/pexel-doors-4.jpg');
+  background-image: url('/assets/images/pexel-doors-4.jpg');
 }
 .about-hero-overlay {
   background-color: #82916a00;
@@ -145,7 +145,7 @@ body {
 }
 
 .gallery-section {
-  background-image: url('/images/tile-room.png');
+  background-image: url('/assets/images/tile-room.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

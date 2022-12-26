@@ -37,7 +37,7 @@ const Home = () => {
     <PreHeader content={content} />
     <Header />
     <Banner content={content} />
-    <AboutSection content={content} showAll={false} />
+    <AboutSection content={content} showAll={true} />
     <Brands />
     <Categories />
     <ProductSection />

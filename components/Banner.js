@@ -3,8 +3,8 @@ import React from 'react';
 import { Container, Button } from 'react-bootstrap'
 
 const Banner = ({content}) => {
-  const defaultBannerHeading = "Some Pretty Text To Convince Customers To Buy From Us."
-  const defaultBannerText = "Some more text to say addition reasons why our brand is most exceptionas and why you need to click the goddam buttom before your bloody ass gets spanked"
+  const defaultBannerHeading = "The brand you can trust for best quality materials."
+  const defaultBannerText = "Arklink investment limited is your one-stop shop for all products and services related to building materials, especially tiles, marbles, doors, and bathroom decor."
   
   return (
     <>
@@ -16,7 +16,7 @@ const Banner = ({content}) => {
           {content?.bannerText ?? defaultBannerText}
         </Container>
         <Container className="banner-btn text-center">
-          <Link className='border-0' href='/categories'><Button className="btn border-0">See Categories</Button></Link>
+          <Link className='border-0' href='/categories'><Button className="btn btn-lg border-0">See Categories</Button></Link>
         </Container>
     </Container>
     </>

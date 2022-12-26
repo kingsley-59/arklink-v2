@@ -2,16 +2,16 @@ import Image from "next/image";
 import React, { Component } from "react";
 import { Container } from 'react-bootstrap'
 import Slider from "react-slick";
-import logo from "../assets/images/logo.svg";
+// import logo from "../assets/images/logo.svg";
 
 const BrandDetails = [
-  {src: require('../assets/images/b_logo_a.jpg'), altName: ''},
-  {src: require('../assets/images/b_logo_b.jpg'), altName: ''},
-  {src: require('../assets/images/b_logo_c.jpg'), altName: ''},
-  {src: require('../assets/images/b_logo_d.jpg'), altName: ''},
-  {src: require('../assets/images/b_logo_e.jpg'), altName: ''},
-  {src: require('../assets/images/b_logo_f.jpg'), altName: ''},
-  {src: require('../assets/images/b_logo_g.jpg'), altName: ''},
+  {src: require('/public/assets/images/b_logo_a.jpg'), altName: ''},
+  {src: require('/public/assets/images/b_logo_b.jpg'), altName: ''},
+  {src: require('/public/assets/images/b_logo_c.jpg'), altName: ''},
+  {src: require('/public/assets/images/b_logo_d.jpg'), altName: ''},
+  {src: require('/public/assets/images/b_logo_e.jpg'), altName: ''},
+  {src: require('/public/assets/images/b_logo_f.jpg'), altName: ''},
+  {src: require('/public/assets/images/b_logo_g.jpg'), altName: ''},
 ]
 
 const LogoCard = ({src, name}) => {

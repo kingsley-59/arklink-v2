@@ -1,34 +1,34 @@
 import Image from 'next/image';
-import React, {useState} from 'react'
+import React, {useMemo, useState} from 'react'
 import {Modal} from 'react-bootstrap'
 
 const Images = [
-    // {name: '', src: require('../assets/images/pexel-bathroom-1.jpg')},
-    {name: '', src: require('../assets/images/pexel-bathroom-2.jpg')},
-    {name: '', src: require('../assets/images/pexel-bathroom-3.jpg')},
-    // {name: '', src: require('../assets/images/pexel-bathroom-4.jpg')},
-    // {name: '', src: require('../assets/images/pexel-doors-1.jpg')},
-    {name: '', src: require('../assets/images/pexel-doors-2.jpg')},
-    {name: '', src: require('../assets/images/pexel-doors-3.jpg')},
-    // {name: '', src: require('../assets/images/pexel-doors-4.jpg')},
-    {name: '', src: require('../assets/images/pexel-tiles-1.jpg')},
-    {name: '', src: require('../assets/images/pexel-tiles-2.jpg')},
-    {name: '', src: require('../assets/images/pexel-tiles-3.jpg')},
-    {name: '', src: require('../assets/images/pexel-tiles-4.jpg')},
-    {name: '', src: require('../assets/images/tiles-1.jpg')},
-    {name: '', src: require('../assets/images/tiles-2.jpg')},
-    {name: '', src: require('../assets/images/tiles-3.jpg')},
-    {name: '', src: require('../assets/images/tiles-4.jpg')},
-    {name: '', src: require('../assets/images/tiles-group-1.jpg')},
-    {name: '', src: require('../assets/images/tiles-group-2.jpg')},
-    {name: '', src: require('../assets/images/tiles-group-3.jpg')},
-    {name: '', src: require('../assets/images/tiles-group-4.jpg')},
-    {name: '', src: require('../assets/images/marble-1.jpg')},
-    {name: '', src: require('../assets/images/marble-2.jpg')},
-    {name: '', src: require('../assets/images/marble-3.jpg')},
-    {name: '', src: require('../assets/images/office-building-1.jpg')},
-    {name: '', src: require('../assets/images/office-building-2.jpg')},
-    {name: '', src: require('../assets/images/office-building-3.jpg')},
+    // {name: '', src: require('/public/assets/images/pexel-bathroom-1.jpg')},
+    {name: '', src: require('/public/assets/images/pexel-bathroom-2.jpg')},
+    {name: '', src: require('/public/assets/images/pexel-bathroom-3.jpg')},
+    // {name: '', src: require('/public/assets/images/pexel-bathroom-4.jpg')},
+    // {name: '', src: require('/public/assets/images/pexel-doors-1.jpg')},
+    {name: '', src: require('/public/assets/images/pexel-doors-2.jpg')},
+    {name: '', src: require('/public/assets/images/pexel-doors-3.jpg')},
+    // {name: '', src: require('/publuc/assets/images/pexel-doors-4.jpg')},
+    {name: '', src: require('/public/assets/images/pexel-tiles-1.jpg')},
+    {name: '', src: require('/public/assets/images/pexel-tiles-2.jpg')},
+    {name: '', src: require('/public/assets/images/pexel-tiles-3.jpg')},
+    {name: '', src: require('/public/assets/images/pexel-tiles-4.jpg')},
+    {name: '', src: require('/public/assets/images/tiles-1.jpg')},
+    {name: '', src: require('/public/assets/images/tiles-2.jpg')},
+    {name: '', src: require('/public/assets/images/tiles-3.jpg')},
+    {name: '', src: require('/public/assets/images/tiles-4.jpg')},
+    {name: '', src: require('/public/assets/images/tiles-group-1.jpg')},
+    {name: '', src: require('/public/assets/images/tiles-group-2.jpg')},
+    {name: '', src: require('/public/assets/images/tiles-group-3.jpg')},
+    {name: '', src: require('/public/assets/images/tiles-group-4.jpg')},
+    {name: '', src: require('/public/assets/images/marble-1.jpg')},
+    {name: '', src: require('/public/assets/images/marble-2.jpg')},
+    {name: '', src: require('/public/assets/images/marble-3.jpg')},
+    {name: '', src: require('/public/assets/images/office-building-1.jpg')},
+    {name: '', src: require('/public/assets/images/office-building-2.jpg')},
+    {name: '', src: require('/public/assets/images/office-building-3.jpg')},
 ] 
 
 const ImageDisplayModal = ({src, show, handleShow}) => {
@@ -59,17 +59,18 @@ const MainGallery = () => {
 
     const ImageBox = ({src, name}) => {
         return (
-            <div className="col-sm-6 col-md-4 col-lg-3 p-0">
-                <Image src={src} alt={name} className='w-100' onClick={() => handleImageClick(src)} />
+            <div className="col-sm-6 col-md-4 col-lg-3 p-0" style={{ aspectRatio: " 3 / 4", overflow: 'hidden' }}>
+                <Image src={src} alt={name} className='w-100 m-auto' onClick={() => handleImageClick(src)} />
             </div>
         )
     }
 
     // const shuffledList = shuffle(Images)
-
-    const ImageList = Images.map(({name, src}, idx) => {
-        return <ImageBox src={src} name={name} key={idx} />
-    })
+    
+    const ImageList = useMemo(() => shuffle(Images).map(({name, src}, idx) => {
+            return <ImageBox src={src} name={name} key={idx} />
+        })
+    , [])
     
     return (
     <div className='my-3 p-5'>

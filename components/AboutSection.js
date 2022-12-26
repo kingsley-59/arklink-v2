@@ -5,11 +5,10 @@ import Link from 'next/link'
 
 const AboutSection = ({content, showAll}) => {
     const defaultAboutText = `
-        This content will be a bit descriptive. Having passed the message that we sell 
-        ceramic tiles and marble, we will now move forward to saying a few things about us 
-        as a company. Definitely, it won't be as long as the text in the about page.
-        This content will be a bit descriptive. Having passed the message that we sell 
-        ceramic tiles and marble, we will now move forward to saying a few things about us as a company.
+        Arklink investment limited is your one-stop shop for all products and services related to building materials, 
+        especially tiles, marbles, doors, and bathroom decor. We make sure we provide the best quality materials from all around the world.
+        We buy from top companies and distribute to both wholesalers and retailers. Our highest prority is to keep you satisfied with our array
+        of exquisite products. From polished tiles, secure hardened doors, marbles, WCs to premium bathubs and accessories, we've got you covered!
     `
     const aboutEssay = content?.about_essay ?? defaultAboutText
     
