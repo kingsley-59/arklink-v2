@@ -11,11 +11,11 @@ import Footer from '../components/Footer';
 import Image from 'next/image';
 
 const Data = [
-  {src: require('../assets/images/pexel-tiles-1.jpg'), text: 'Tiles and floors'},
-  {src: require('../assets/images/pexel-tiles-2.jpg'), text: 'Marble and stone'},
-  {src: require('../assets/images/pexel-doors-3.jpg'), text: 'Doors'},
-  {src: require('../assets/images/pexel-bathroom-1.jpg'), text: 'Sanitary wares'},
-  {src: require('../assets/images/pexel-bathroom-3.jpg'), text: 'Accessories'},
+  {src: require('/public/assets/images/pexel-tiles-1.jpg'), text: 'Tiles and floors'},
+  {src: require('/public/assets/images/pexel-tiles-2.jpg'), text: 'Marble and stone'},
+  {src: require('/public/assets/images/pexel-doors-3.jpg'), text: 'Doors'},
+  {src: require('/public/assets/images/pexel-bathroom-1.jpg'), text: 'Sanitary wares'},
+  {src: require('/public/assets/images/pexel-bathroom-3.jpg'), text: 'Accessories'},
 ]
 
 const ImageOverlay = ({src, text}) => {
